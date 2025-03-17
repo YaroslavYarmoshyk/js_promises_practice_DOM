@@ -65,5 +65,5 @@ function createNotification(clazz, message) {
 }
 
 firstPromise.then(successHandler, errorHandler);
-secondPromise.then(successHandler);
-thirdPromise.then(successHandler);
+secondPromise.then(successHandler, errorHandler);
+thirdPromise.then(successHandler, errorHandler);
